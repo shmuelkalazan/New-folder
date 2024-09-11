@@ -22,3 +22,17 @@ function capitalizeFirstLetter(theString){
         return newString}
 console.log(capitalizeFirstLetter("helow word my freind."));
 
+
+let tasks = []
+
+let task = {
+    id : 1,
+    mission : "do something"}
+
+function addTask(newTask){
+    const myJSON = JSON.stringify(newTask);
+    tasks[tasks.length] = myJSON
+    console.log(tasks);  
+    localStorage.setItem("tasks",tasks)
+}
+addTask(task)
