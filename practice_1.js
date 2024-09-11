@@ -15,5 +15,13 @@ function uniq(list){
 
 console.log(uniq(points));
 
-
+function capitalizeFirstLetter(theString){
+    const words = theString.split(" ")
+    let newString = ""
+    for (let word of words) {
+        if (word[word.length-1] != "." ) {   
+            newString  += word[0].toUpperCase() + word.slice(1) + " ";}         
+        else{newString += word}}   
+        return newString}
+console.log(capitalizeFirstLetter("helow word my freind."));
 
